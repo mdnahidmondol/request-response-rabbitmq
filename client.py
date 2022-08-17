@@ -21,7 +21,7 @@ channel.basic_consume(
 channel.queue_declare(queue="request-queue")
 message = "Can I request a reply"
 
-cor_id =  uuid.uuid4()
+cor_id =  str(uuid.uuid4())
 
 print(f"Sending Request: {cor_id}")
 
